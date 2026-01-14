@@ -1,0 +1,37 @@
+{
+  "name": "Telegram Mongo Bot",
+  "description": "Telethon + MongoDB Telegram Bot",
+  "repository": "https://github.com/yourusername/yourrepo",
+  "keywords": ["telegram", "telethon", "mongodb", "python"],
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API HASH",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Telegram Bot Token",
+      "required": true
+    },
+    "MONGO_DB_URL": {
+      "description": "MongoDB connection string",
+      "required": true
+    },
+    "DATABASE_NAME": {
+      "description": "Mongo database name",
+      "required": true
+    },
+    "COLLECTION_NAME": {
+      "description": "Mongo collection name",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
